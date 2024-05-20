@@ -15,11 +15,10 @@
             <input id="message" name="message" type="text" class="form-control" pInputText [(ngModel)]="message"
                 placeholder="Ingresa un mensaje" required>
         </div>
-        <button type="submit" class="submit-button">Enviar</button>
+        <p-button severity="success" type="submit" class="submit-button">Enviar </p-button>
 
-        <div class="messages-container">
-            <p-messages [(value)]="messages" [enableService]="false" [closable]="false" ></p-messages>
-        </div>
+        <p-messages [(value)]="messages" [enableService]="false" [closable]="false"></p-messages>
+
 
     </form>
 
