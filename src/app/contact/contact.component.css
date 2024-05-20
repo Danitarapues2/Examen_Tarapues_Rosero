@@ -1,0 +1,14 @@
+
+.form-container {
+    background-color: #ffd3fd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+

@@ -7,6 +7,12 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MessagesModule } from 'primeng/messages';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -16,14 +22,22 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     PostsComponent
   ],
+
   imports: [
-    BrowserModule,
+    ButtonModule,
+    InputTextModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    MessagesModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
